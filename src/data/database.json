@@ -1,0 +1,103 @@
+{
+  "system_info": {
+    "app_name": "Thế Giới Công Nghệ (TGCN)",
+    "version": "2.5.0",
+    "db_engine": "TGCN JSON Database Engine",
+    "last_updated": "2026-07-30T17:25:00.000Z"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 16 Pro Max 256GB",
+      "brand": "Apple",
+      "category": "Smartphones",
+      "price": 32550000,
+      "oldPrice": 34990000,
+      "discountPercent": 7,
+      "stock": 15,
+      "rating": 4.9,
+      "badge": "Bán Chạy",
+      "images": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png"
+      ],
+      "description": "Chip Apple A18 Pro, màn hình Super Retina XDR 6.9 inch 120Hz, vỏ Titan cấp 5 siêu bền."
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S24 Ultra 512GB",
+      "brand": "Samsung",
+      "category": "Smartphones",
+      "price": 29990000,
+      "oldPrice": 33990000,
+      "discountPercent": 12,
+      "stock": 10,
+      "rating": 4.8,
+      "badge": "Galaxy AI",
+      "images": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s24-ultra.png"
+      ],
+      "description": "Bút S-Pen tích hợp, chip Snapdragon 8 Gen 3 for Galaxy, camera 200MP Zoom 100x AI."
+    },
+    {
+      "id": 3,
+      "name": "MacBook Pro 16 M3 Max 36GB/1TB",
+      "brand": "Apple",
+      "category": "Laptops",
+      "price": 88990000,
+      "oldPrice": 94990000,
+      "discountPercent": 6,
+      "stock": 5,
+      "rating": 5.0,
+      "badge": "Cao Cấp",
+      "images": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/m/a/macbook_pro_16_inch_m3.png"
+      ],
+      "description": "Siêu chip Apple M3 Max 16-Core CPU, 40-Core GPU, màn hình Liquid Retina XDR 120Hz."
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "name": "Lê Tấn Dư (Admin)",
+      "email": "tandu@gmail.com",
+      "phone": "0368402970",
+      "role": "admin",
+      "memberTier": "S-ELITE"
+    },
+    {
+      "id": "u2",
+      "name": "Nguyễn Văn A",
+      "email": "nguyenvana@gmail.com",
+      "phone": "0987777654",
+      "role": "customer",
+      "memberTier": "S-ELITE"
+    }
+  ],
+  "orders": [
+    {
+      "id": "HD-98213",
+      "customer": "Nguyễn Văn A",
+      "phone": "0987777654",
+      "total": 32550000,
+      "status": "Đã giao hàng",
+      "paymentMethod": "COD",
+      "createdAt": "2026-07-29T10:15:00.000Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "v1",
+      "code": "TGCN500",
+      "discountValue": 500000,
+      "discountType": "fixed",
+      "isActive": true
+    },
+    {
+      "id": "v2",
+      "code": "SSTUDENT5",
+      "discountValue": 5,
+      "discountType": "percentage",
+      "isActive": true
+    }
+  ]
+}

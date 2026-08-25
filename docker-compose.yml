@@ -1,0 +1,24 @@
+services:
+  # Production Web Server (Nginx Multi-stage build)
+  tandu-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tandu_production_web
+    restart: always
+    ports:
+      - "80:80"
+
+  # Development Web Server (Vite Live-reload)
+  tandu-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: tandu_dev_web
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
